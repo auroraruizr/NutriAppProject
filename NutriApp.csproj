@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B2D4D78-AE88-4477-A03E-A9CCE2725C42}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NutriApp</RootNamespace>
+    <AssemblyName>NutriApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCitas\frmAgendarCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCitas\frmAgendarCita.Designer.cs">
+      <DependentUpon>frmAgendarCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCitas\frmCancelarCitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCitas\frmCancelarCitas.Designer.cs">
+      <DependentUpon>frmCancelarCitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCitas\frmProximaCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCitas\frmProximaCita.Designer.cs">
+      <DependentUpon>frmProximaCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultas\frmAjustesAgenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultas\frmAjustesAgenda.Designer.cs">
+      <DependentUpon>frmAjustesAgenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultas\frmOpciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultas\frmOpciones.Designer.cs">
+      <DependentUpon>frmOpciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmContactos\frmAltaContacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContactos\frmAltaContacto.Designer.cs">
+      <DependentUpon>frmAltaContacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmContactos\frmListaContactos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContactos\frmListaContactos.Designer.cs">
+      <DependentUpon>frmListaContactos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPacientes\frmProgresoPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPacientes\frmProgresoPaciente.Designer.cs">
+      <DependentUpon>frmProgresoPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPacientes\frmActualizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPacientes\frmActualizacion.Designer.cs">
+      <DependentUpon>frmActualizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPacientes\frmArchivoPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPacientes\frmArchivoPaciente.Designer.cs">
+      <DependentUpon>frmArchivoPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPacientes\frmNuevoPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPacientes\frmNuevoPaciente.Designer.cs">
+      <DependentUpon>frmNuevoPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroPersonal\frmRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroPersonal\frmRegistro.Designer.cs">
+      <DependentUpon>frmRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCitas\frmAgendarCita.resx">
+      <DependentUpon>frmAgendarCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCitas\frmCancelarCitas.resx">
+      <DependentUpon>frmCancelarCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCitas\frmProximaCita.resx">
+      <DependentUpon>frmProximaCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultas\frmAjustesAgenda.resx">
+      <DependentUpon>frmAjustesAgenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultas\frmOpciones.resx">
+      <DependentUpon>frmOpciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContactos\frmAltaContacto.resx">
+      <DependentUpon>frmAltaContacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContactos\frmListaContactos.resx">
+      <DependentUpon>frmListaContactos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPacientes\frmActualizacion.resx">
+      <DependentUpon>frmActualizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPacientes\frmArchivoPaciente.resx">
+      <DependentUpon>frmArchivoPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPacientes\frmNuevoPaciente.resx">
+      <DependentUpon>frmNuevoPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPacientes\frmProgresoPaciente.resx">
+      <DependentUpon>frmProgresoPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroPersonal\frmRegistro.resx">
+      <DependentUpon>frmRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\NUTRICIÓN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BD\" />
+    <Folder Include="frmAyuda\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\aceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Atras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\salir-de-gnome-icono-8179-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\procesar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\VerSimilares.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\reporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\ic_action_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\ic_action_user_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\954780307.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Historial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\ic_action_attach.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
