@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConnectToDataBase.cs" />
     <Compile Include="frmCitas\frmAgendarCita.cs">
       <SubType>Form</SubType>
     </Compile>
