@@ -38,6 +38,7 @@ namespace NutriApp.Login
             cmd.Parameters.AddWithValue("@nombre", "Aurora");
 
 
+
             int i = cmd.ExecuteNonQuery();
 
             cnn.Close();
@@ -48,6 +49,7 @@ namespace NutriApp.Login
             }
 
            
-        }
+
+        
     }
 }
