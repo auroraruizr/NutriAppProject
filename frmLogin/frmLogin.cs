@@ -25,7 +25,7 @@ namespace NutriApp.Login
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
-        {/*+
+        {
             cnn.Open();
             SqlCommand cmd = new SqlCommand("sp_insert", cnn);//crear stored procedure
             cmd.CommandType = CommandType.StoredProcedure;
@@ -43,9 +43,9 @@ namespace NutriApp.Login
             if (i != 0)
             {
                 MessageBox.Show(i + "Data Saved");
-            }*/
+            }
 
-            MessageBox.Show("Prueba de cambios GitHub");
+           
         }
     }
 }
