@@ -24,7 +24,7 @@ namespace NutriApp
 
             catch(Exception ex)
             {
-                MessageBox.Show("Connection Open!");
+                MessageBox.Show(ex.Message);
             }
         }
 

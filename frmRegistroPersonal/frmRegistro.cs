@@ -12,9 +12,24 @@ namespace NutriApp.frmRegistroPersonal
 {
     public partial class frmRegistro : Form
     {
+        frmMenu Wmenu = new frmMenu();
+
         public frmRegistro()
         {
             InitializeComponent();
+        }
+
+        private void frmRegistro_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            
+            this.Hide();
+            Wmenu.Show();
+            
         }
     }
 }

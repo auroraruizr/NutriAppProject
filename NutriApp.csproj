@@ -247,5 +247,8 @@
   <ItemGroup>
     <None Include="Imagenes\ic_action_attach.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagenes\Icon1.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

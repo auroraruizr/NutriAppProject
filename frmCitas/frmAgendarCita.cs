@@ -12,9 +12,29 @@ namespace NutriApp.frmCitas
 {
     public partial class frmAgendarCita : Form
     {
+        frmMenu Wmenu = new frmMenu();
+
         public frmAgendarCita()
         {
             InitializeComponent();
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Wmenu.Show();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            frmContactos.frmListaContactos Wlista = new frmContactos.frmListaContactos();
+            Wlista.ShowDialog();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Wmenu.Show();
         }
     }
 }

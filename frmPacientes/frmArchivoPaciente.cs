@@ -16,5 +16,16 @@ namespace NutriApp.frmPacientes
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {         
+            this.Close();          
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmContactos.frmListaContactos WlistCont = new frmContactos.frmListaContactos();
+            WlistCont.ShowDialog();
+        }
     }
 }

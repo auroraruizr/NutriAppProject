@@ -12,14 +12,25 @@ namespace NutriApp.Login
 {
     public partial class frmLogin : Form
     {
+        frmMenu Wmenu = new frmMenu();
+
         public frmLogin()
         {
             InitializeComponent();
         }
 
-        private void frmLogin_Load(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Wmenu.Show();
 
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            
+            this.Hide();
+            Wmenu.Show();
         }
     }
 }

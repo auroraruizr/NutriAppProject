@@ -33,12 +33,12 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lstListado = new System.Windows.Forms.DataGridView();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.btnVolver = new System.Windows.Forms.Button();
             this.lbNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblDireccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -49,26 +49,30 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 34);
+            this.label1.Location = new System.Drawing.Point(4, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 17);
+            this.label1.Size = new System.Drawing.Size(108, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre de Contacto:";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(154, 34);
+            this.txtNombre.Location = new System.Drawing.Point(116, 28);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(210, 22);
+            this.txtNombre.Size = new System.Drawing.Size(158, 20);
             this.txtNombre.TabIndex = 1;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtNombre);
-            this.groupBox1.Location = new System.Drawing.Point(6, 5);
+            this.groupBox1.Location = new System.Drawing.Point(4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(566, 79);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(424, 64);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de Busqueda";
@@ -76,9 +80,11 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lstListado);
-            this.groupBox2.Location = new System.Drawing.Point(6, 84);
+            this.groupBox2.Location = new System.Drawing.Point(4, 68);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(566, 318);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(424, 258);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Listado de Contactos";
@@ -97,37 +103,15 @@
             this.lblTelefono,
             this.lblEmail});
             this.lstListado.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lstListado.Location = new System.Drawing.Point(3, 18);
+            this.lstListado.Location = new System.Drawing.Point(2, 15);
+            this.lstListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lstListado.Name = "lstListado";
             this.lstListado.RowHeadersWidth = 51;
             this.lstListado.RowTemplate.Height = 24;
             this.lstListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.lstListado.Size = new System.Drawing.Size(554, 294);
+            this.lstListado.Size = new System.Drawing.Size(416, 239);
             this.lstListado.TabIndex = 0;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Image = global::NutriApp.Properties.Resources.lupa;
-            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(154, 31);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(121, 44);
-            this.btnBuscar.TabIndex = 2;
-            this.btnBuscar.Text = "      Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            // 
-            // btnVolver
-            // 
-            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVolver.Image = global::NutriApp.Properties.Resources.Atras;
-            this.btnVolver.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVolver.Location = new System.Drawing.Point(6, 31);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(115, 44);
-            this.btnVolver.TabIndex = 3;
-            this.btnVolver.Text = "   Volver";
-            this.btnVolver.UseVisualStyleBackColor = true;
+            this.lstListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.lstListado_CellContentClick);
             // 
             // lbNombre
             // 
@@ -157,26 +141,56 @@
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Width = 125;
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Image = global::NutriApp.Properties.Resources.lupa;
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.Location = new System.Drawing.Point(116, 25);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(91, 36);
+            this.btnBuscar.TabIndex = 2;
+            this.btnBuscar.Text = "      Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            // 
+            // btnVolver
+            // 
+            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolver.Image = global::NutriApp.Properties.Resources.Atras;
+            this.btnVolver.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVolver.Location = new System.Drawing.Point(4, 25);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(86, 36);
+            this.btnVolver.TabIndex = 3;
+            this.btnVolver.Text = "   Volver";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.btnVolver);
             this.groupBox3.Controls.Add(this.btnBuscar);
-            this.groupBox3.Location = new System.Drawing.Point(6, 408);
+            this.groupBox3.Location = new System.Drawing.Point(4, 332);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(304, 91);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Size = new System.Drawing.Size(228, 74);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Opciones";
             // 
             // frmListaContactos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(601, 503);
+            this.ClientSize = new System.Drawing.Size(451, 409);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmListaContactos";
             this.Text = "Modulo - Listado de Contactos";
             this.groupBox1.ResumeLayout(false);
