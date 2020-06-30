@@ -29,8 +29,8 @@ namespace NutriApp.Login
         private void btnVolver_Click(object sender, EventArgs e)
         {
             
-            /*this.Hide();
-            Wmenu.Show();*/
+            this.Hide();
+            Wmenu.Show();
         }
     }
 }
