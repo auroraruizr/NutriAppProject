@@ -66,7 +66,8 @@
             this.salirDeNutriAppToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1225, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(919, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -77,20 +78,22 @@
             this.asistenteToolStripMenuItem1});
             this.accederAlSistemaToolStripMenuItem.Image = global::NutriApp.Properties.Resources.VerSimilares;
             this.accederAlSistemaToolStripMenuItem.Name = "accederAlSistemaToolStripMenuItem";
-            this.accederAlSistemaToolStripMenuItem.Size = new System.Drawing.Size(167, 24);
+            this.accederAlSistemaToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
             this.accederAlSistemaToolStripMenuItem.Text = "Acceder al sistema";
             // 
             // asistenteToolStripMenuItem
             // 
             this.asistenteToolStripMenuItem.Name = "asistenteToolStripMenuItem";
-            this.asistenteToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
+            this.asistenteToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.asistenteToolStripMenuItem.Text = "Login";
+            this.asistenteToolStripMenuItem.Click += new System.EventHandler(this.asistenteToolStripMenuItem_Click);
             // 
             // asistenteToolStripMenuItem1
             // 
             this.asistenteToolStripMenuItem1.Name = "asistenteToolStripMenuItem1";
-            this.asistenteToolStripMenuItem1.Size = new System.Drawing.Size(165, 26);
+            this.asistenteToolStripMenuItem1.Size = new System.Drawing.Size(131, 22);
             this.asistenteToolStripMenuItem1.Text = "Registrarse";
+            this.asistenteToolStripMenuItem1.Click += new System.EventHandler(this.asistenteToolStripMenuItem1_Click);
             // 
             // citasToolStripMenuItem
             // 
@@ -100,26 +103,29 @@
             this.cancelarCitasToolStripMenuItem});
             this.citasToolStripMenuItem.Image = global::NutriApp.Properties.Resources.reporte;
             this.citasToolStripMenuItem.Name = "citasToolStripMenuItem";
-            this.citasToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
+            this.citasToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
             this.citasToolStripMenuItem.Text = "Citas";
             // 
             // agendarCitasToolStripMenuItem
             // 
             this.agendarCitasToolStripMenuItem.Name = "agendarCitasToolStripMenuItem";
-            this.agendarCitasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.agendarCitasToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.agendarCitasToolStripMenuItem.Text = "Agendar Cita";
+            this.agendarCitasToolStripMenuItem.Click += new System.EventHandler(this.agendarCitasToolStripMenuItem_Click);
             // 
             // proximasCitasToolStripMenuItem
             // 
             this.proximasCitasToolStripMenuItem.Name = "proximasCitasToolStripMenuItem";
-            this.proximasCitasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.proximasCitasToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.proximasCitasToolStripMenuItem.Text = "Proximas Cita";
+            this.proximasCitasToolStripMenuItem.Click += new System.EventHandler(this.proximasCitasToolStripMenuItem_Click);
             // 
             // cancelarCitasToolStripMenuItem
             // 
             this.cancelarCitasToolStripMenuItem.Name = "cancelarCitasToolStripMenuItem";
-            this.cancelarCitasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.cancelarCitasToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.cancelarCitasToolStripMenuItem.Text = "Cancelar Cita";
+            this.cancelarCitasToolStripMenuItem.Click += new System.EventHandler(this.cancelarCitasToolStripMenuItem_Click);
             // 
             // consultasToolStripMenuItem
             // 
@@ -128,19 +134,19 @@
             this.ajusteDeAgendaToolStripMenuItem});
             this.consultasToolStripMenuItem.Image = global::NutriApp.Properties.Resources.Historial;
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
             this.consultasToolStripMenuItem.Text = "Consultas";
             // 
             // proximaCitaToolStripMenuItem
             // 
             this.proximaCitaToolStripMenuItem.Name = "proximaCitaToolStripMenuItem";
-            this.proximaCitaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.proximaCitaToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.proximaCitaToolStripMenuItem.Text = "Proxima Cita";
             // 
             // ajusteDeAgendaToolStripMenuItem
             // 
             this.ajusteDeAgendaToolStripMenuItem.Name = "ajusteDeAgendaToolStripMenuItem";
-            this.ajusteDeAgendaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ajusteDeAgendaToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.ajusteDeAgendaToolStripMenuItem.Text = "Ajuste de Agenda";
             // 
             // pacientesToolStripMenuItem
@@ -152,32 +158,36 @@
             this.archivoToolStripMenuItem});
             this.pacientesToolStripMenuItem.Image = global::NutriApp.Properties.Resources.ic_action_user;
             this.pacientesToolStripMenuItem.Name = "pacientesToolStripMenuItem";
-            this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
+            this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
             this.pacientesToolStripMenuItem.Text = "Pacientes";
             // 
             // nuevoPacienteToolStripMenuItem
             // 
             this.nuevoPacienteToolStripMenuItem.Name = "nuevoPacienteToolStripMenuItem";
-            this.nuevoPacienteToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.nuevoPacienteToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.nuevoPacienteToolStripMenuItem.Text = "Nuevo Paciente";
+            this.nuevoPacienteToolStripMenuItem.Click += new System.EventHandler(this.nuevoPacienteToolStripMenuItem_Click);
             // 
             // actualizacionToolStripMenuItem
             // 
             this.actualizacionToolStripMenuItem.Name = "actualizacionToolStripMenuItem";
-            this.actualizacionToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.actualizacionToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.actualizacionToolStripMenuItem.Text = "Actualizacion";
+            this.actualizacionToolStripMenuItem.Click += new System.EventHandler(this.actualizacionToolStripMenuItem_Click);
             // 
             // progresoToolStripMenuItem
             // 
             this.progresoToolStripMenuItem.Name = "progresoToolStripMenuItem";
-            this.progresoToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.progresoToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.progresoToolStripMenuItem.Text = "Progreso";
+            this.progresoToolStripMenuItem.Click += new System.EventHandler(this.progresoToolStripMenuItem_Click);
             // 
             // archivoToolStripMenuItem
             // 
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.archivoToolStripMenuItem.Text = "Archivo";
+            this.archivoToolStripMenuItem.Click += new System.EventHandler(this.archivoToolStripMenuItem_Click);
             // 
             // contactosToolStripMenuItem
             // 
@@ -186,20 +196,22 @@
             this.nuevoContactoToolStripMenuItem});
             this.contactosToolStripMenuItem.Image = global::NutriApp.Properties.Resources.ic_action_user_add;
             this.contactosToolStripMenuItem.Name = "contactosToolStripMenuItem";
-            this.contactosToolStripMenuItem.Size = new System.Drawing.Size(109, 24);
+            this.contactosToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
             this.contactosToolStripMenuItem.Text = "Contactos";
             // 
             // listaContactosToolStripMenuItem
             // 
             this.listaContactosToolStripMenuItem.Name = "listaContactosToolStripMenuItem";
-            this.listaContactosToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
+            this.listaContactosToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.listaContactosToolStripMenuItem.Text = "Lista Contactos";
+            this.listaContactosToolStripMenuItem.Click += new System.EventHandler(this.listaContactosToolStripMenuItem_Click);
             // 
             // nuevoContactoToolStripMenuItem
             // 
             this.nuevoContactoToolStripMenuItem.Name = "nuevoContactoToolStripMenuItem";
-            this.nuevoContactoToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
+            this.nuevoContactoToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.nuevoContactoToolStripMenuItem.Text = "Nuevo Contacto";
+            this.nuevoContactoToolStripMenuItem.Click += new System.EventHandler(this.nuevoContactoToolStripMenuItem_Click);
             // 
             // acercaDeNutriAppToolStripMenuItem
             // 
@@ -207,31 +219,33 @@
             this.acercaDeNutriAppToolStripMenuItem1});
             this.acercaDeNutriAppToolStripMenuItem.Image = global::NutriApp.Properties.Resources.procesar1;
             this.acercaDeNutriAppToolStripMenuItem.Name = "acercaDeNutriAppToolStripMenuItem";
-            this.acercaDeNutriAppToolStripMenuItem.Size = new System.Drawing.Size(85, 24);
+            this.acercaDeNutriAppToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.acercaDeNutriAppToolStripMenuItem.Text = "Ayuda";
             // 
             // acercaDeNutriAppToolStripMenuItem1
             // 
             this.acercaDeNutriAppToolStripMenuItem1.Name = "acercaDeNutriAppToolStripMenuItem1";
-            this.acercaDeNutriAppToolStripMenuItem1.Size = new System.Drawing.Size(223, 26);
+            this.acercaDeNutriAppToolStripMenuItem1.Size = new System.Drawing.Size(178, 22);
             this.acercaDeNutriAppToolStripMenuItem1.Text = "Acerca de NutriApp";
             // 
             // salirDeNutriAppToolStripMenuItem
             // 
             this.salirDeNutriAppToolStripMenuItem.Image = global::NutriApp.Properties.Resources.salir_de_gnome_icono_8179_48;
             this.salirDeNutriAppToolStripMenuItem.Name = "salirDeNutriAppToolStripMenuItem";
-            this.salirDeNutriAppToolStripMenuItem.Size = new System.Drawing.Size(158, 24);
+            this.salirDeNutriAppToolStripMenuItem.Size = new System.Drawing.Size(129, 24);
             this.salirDeNutriAppToolStripMenuItem.Text = "Salir de NutriApp";
+            this.salirDeNutriAppToolStripMenuItem.Click += new System.EventHandler(this.salirDeNutriAppToolStripMenuItem_Click);
             // 
             // frmMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::NutriApp.Properties.Resources.NUTRICIÓN;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1225, 450);
+            this.ClientSize = new System.Drawing.Size(919, 366);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmMenu";
             this.Text = "NutriApp - Software Nutricional";
             this.menuStrip1.ResumeLayout(false);

@@ -30,6 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtPaciente = new System.Windows.Forms.TextBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -45,8 +47,6 @@
             this.Opcionbes = new System.Windows.Forms.GroupBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
-            this.txtPaciente = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lstListado)).BeginInit();
@@ -56,9 +56,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(2, 29);
+            this.label1.Location = new System.Drawing.Point(2, 24);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 17);
+            this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nutriologo(a)";
             // 
@@ -72,59 +73,86 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(5, 0);
+            this.groupBox1.Location = new System.Drawing.Point(4, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(888, 89);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(666, 72);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(134, 24);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(52, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Paciente:";
+            // 
+            // txtPaciente
+            // 
+            this.txtPaciente.Location = new System.Drawing.Point(136, 42);
+            this.txtPaciente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPaciente.Name = "txtPaciente";
+            this.txtPaciente.Size = new System.Drawing.Size(136, 20);
+            this.txtPaciente.TabIndex = 6;
+            // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(627, 51);
+            this.dateTimePicker2.Location = new System.Drawing.Point(470, 41);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(247, 22);
+            this.dateTimePicker2.Size = new System.Drawing.Size(186, 20);
             this.dateTimePicker2.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(626, 26);
+            this.label3.Location = new System.Drawing.Point(470, 21);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 17);
+            this.label3.Size = new System.Drawing.Size(65, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Fecha Final:";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(370, 51);
+            this.dateTimePicker1.Location = new System.Drawing.Point(278, 41);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(247, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(186, 20);
             this.dateTimePicker1.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(370, 26);
+            this.label2.Location = new System.Drawing.Point(278, 21);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 17);
+            this.label2.Size = new System.Drawing.Size(70, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Fecha Inicial:";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(4, 52);
+            this.comboBox1.Location = new System.Drawing.Point(3, 42);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(171, 24);
+            this.comboBox1.Size = new System.Drawing.Size(129, 21);
             this.comboBox1.TabIndex = 1;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lstListado);
-            this.groupBox2.Location = new System.Drawing.Point(5, 95);
+            this.groupBox2.Location = new System.Drawing.Point(4, 77);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(888, 290);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(666, 236);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Listado de Citas";
@@ -144,12 +172,13 @@
             this.lblTelefono,
             this.lblEmail});
             this.lstListado.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lstListado.Location = new System.Drawing.Point(3, 18);
+            this.lstListado.Location = new System.Drawing.Point(2, 15);
+            this.lstListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lstListado.Name = "lstListado";
             this.lstListado.RowHeadersWidth = 51;
             this.lstListado.RowTemplate.Height = 24;
             this.lstListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.lstListado.Size = new System.Drawing.Size(871, 255);
+            this.lstListado.Size = new System.Drawing.Size(653, 207);
             this.lstListado.TabIndex = 0;
             // 
             // lbNombre
@@ -191,9 +220,11 @@
             // 
             this.Opcionbes.Controls.Add(this.btnBuscar);
             this.Opcionbes.Controls.Add(this.btnVolver);
-            this.Opcionbes.Location = new System.Drawing.Point(5, 386);
+            this.Opcionbes.Location = new System.Drawing.Point(4, 314);
+            this.Opcionbes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Opcionbes.Name = "Opcionbes";
-            this.Opcionbes.Size = new System.Drawing.Size(313, 88);
+            this.Opcionbes.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Opcionbes.Size = new System.Drawing.Size(235, 72);
             this.Opcionbes.TabIndex = 3;
             this.Opcionbes.TabStop = false;
             this.Opcionbes.Text = "Opciones";
@@ -202,9 +233,10 @@
             // 
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Image = global::NutriApp.Properties.Resources.lupa;
-            this.btnBuscar.Location = new System.Drawing.Point(158, 34);
+            this.btnBuscar.Location = new System.Drawing.Point(118, 28);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(128, 43);
+            this.btnBuscar.Size = new System.Drawing.Size(96, 35);
             this.btnBuscar.TabIndex = 5;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -215,38 +247,25 @@
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolver.Image = global::NutriApp.Properties.Resources.Atras;
             this.btnVolver.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVolver.Location = new System.Drawing.Point(11, 34);
+            this.btnVolver.Location = new System.Drawing.Point(8, 28);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(131, 43);
+            this.btnVolver.Size = new System.Drawing.Size(98, 35);
             this.btnVolver.TabIndex = 4;
             this.btnVolver.Text = " Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
-            // 
-            // txtPaciente
-            // 
-            this.txtPaciente.Location = new System.Drawing.Point(181, 52);
-            this.txtPaciente.Name = "txtPaciente";
-            this.txtPaciente.Size = new System.Drawing.Size(180, 22);
-            this.txtPaciente.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(178, 29);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 17);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Paciente:";
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // frmProximaCita
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(903, 482);
+            this.ClientSize = new System.Drawing.Size(677, 392);
             this.Controls.Add(this.Opcionbes);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmProximaCita";
             this.Text = "Modulo - Listado de Proxima Citas";
             this.groupBox1.ResumeLayout(false);

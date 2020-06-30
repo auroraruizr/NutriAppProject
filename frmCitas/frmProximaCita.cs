@@ -16,5 +16,12 @@ namespace NutriApp.frmCitas
         {
             InitializeComponent();
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmMenu Wmenu = new frmMenu();
+            Wmenu.Show();
+        }
     }
 }

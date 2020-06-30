@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConnectToDataBase.cs" />
     <Compile Include="frmCitas\frmAgendarCita.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,6 +246,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Imagenes\ic_action_attach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagenes\Icon1.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

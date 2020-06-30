@@ -16,5 +16,19 @@ namespace NutriApp.frmPacientes
         {
             InitializeComponent();
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            frmMenu menu = new frmMenu();
+            this.Close();
+            menu.Show();
+
+        }
+
+        private void btnExpediente_Click(object sender, EventArgs e)
+        {
+            frmPacientes.frmArchivoPaciente WarchivoPac = new frmPacientes.frmArchivoPaciente();           
+            WarchivoPac.ShowDialog();
+        }
     }
 }
