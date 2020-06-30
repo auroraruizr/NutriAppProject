@@ -18,21 +18,17 @@ namespace NutriApp
         }
 
         private void asistenteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
+        {            
             Login.frmLogin Wlogin = new Login.frmLogin();
             this.Hide();
             Wlogin.Show();
-
-
         }
 
         private void asistenteToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             frmRegistroPersonal.frmRegistro Wregistrar = new frmRegistroPersonal.frmRegistro();
             this.Hide();
-            Wregistrar.Show();
-            
+            Wregistrar.Show();       
         }
 
         private void agendarCitasToolStripMenuItem_Click(object sender, EventArgs e)
