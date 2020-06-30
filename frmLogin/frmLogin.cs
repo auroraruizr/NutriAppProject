@@ -26,6 +26,8 @@ namespace NutriApp.Login
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+
+            ////cambio
             cnn.Open();
             SqlCommand cmd = new SqlCommand("sp_insert", cnn);//crear stored procedure
             cmd.CommandType = CommandType.StoredProcedure;
