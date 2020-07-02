@@ -26,5 +26,17 @@ namespace NutriApp.frmConsultas
         {
             
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            frmMenu menu = new frmMenu();
+            this.Close();
+        }
+
+        private void btnMore_Click(object sender, EventArgs e)
+        {
+            frmConsultas.frmOpciones WmasOpciones = new frmConsultas.frmOpciones();
+            WmasOpciones.ShowDialog();
+        }
     }
 }

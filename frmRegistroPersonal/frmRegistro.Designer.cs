@@ -64,9 +64,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Location = new System.Drawing.Point(9, 10);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(444, 169);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -75,7 +75,7 @@
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(237, 126);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(194, 20);
@@ -94,7 +94,7 @@
             // txtID
             // 
             this.txtID.Location = new System.Drawing.Point(237, 82);
-            this.txtID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtID.Margin = new System.Windows.Forms.Padding(2);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(194, 20);
             this.txtID.TabIndex = 11;
@@ -112,7 +112,7 @@
             // txtTRelefono
             // 
             this.txtTRelefono.Location = new System.Drawing.Point(237, 38);
-            this.txtTRelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTRelefono.Margin = new System.Windows.Forms.Padding(2);
             this.txtTRelefono.Name = "txtTRelefono";
             this.txtTRelefono.Size = new System.Drawing.Size(194, 20);
             this.txtTRelefono.TabIndex = 9;
@@ -130,7 +130,7 @@
             // txtCorreo
             // 
             this.txtCorreo.Location = new System.Drawing.Point(7, 126);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(194, 20);
             this.txtCorreo.TabIndex = 7;
@@ -150,7 +150,7 @@
             this.rdbNutriologa.AutoSize = true;
             this.rdbNutriologa.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.rdbNutriologa.Location = new System.Drawing.Point(130, 29);
-            this.rdbNutriologa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbNutriologa.Margin = new System.Windows.Forms.Padding(2);
             this.rdbNutriologa.Name = "rdbNutriologa";
             this.rdbNutriologa.Size = new System.Drawing.Size(73, 17);
             this.rdbNutriologa.TabIndex = 5;
@@ -163,7 +163,7 @@
             this.rdbRecepcionista.AutoSize = true;
             this.rdbRecepcionista.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.rdbRecepcionista.Location = new System.Drawing.Point(7, 29);
-            this.rdbRecepcionista.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbRecepcionista.Margin = new System.Windows.Forms.Padding(2);
             this.rdbRecepcionista.Name = "rdbRecepcionista";
             this.rdbRecepcionista.Size = new System.Drawing.Size(93, 17);
             this.rdbRecepcionista.TabIndex = 4;
@@ -174,7 +174,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(7, 82);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(194, 20);
             this.txtNombre.TabIndex = 1;
@@ -194,9 +194,9 @@
             this.groupBox2.Controls.Add(this.btnGuardar);
             this.groupBox2.Controls.Add(this.btnVolver);
             this.groupBox2.Location = new System.Drawing.Point(9, 179);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(200, 64);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
@@ -207,13 +207,14 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Image = global::NutriApp.Properties.Resources.guardar;
             this.btnGuardar.Location = new System.Drawing.Point(110, 24);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(78, 35);
             this.btnGuardar.TabIndex = 1;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnVolver
             // 
@@ -221,7 +222,7 @@
             this.btnVolver.Image = global::NutriApp.Properties.Resources.Atras;
             this.btnVolver.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVolver.Location = new System.Drawing.Point(7, 24);
-            this.btnVolver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(2);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(76, 35);
             this.btnVolver.TabIndex = 0;
@@ -237,7 +238,7 @@
             this.ClientSize = new System.Drawing.Size(459, 249);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmRegistro";
             this.Text = "Registro de Personal";
             this.Load += new System.EventHandler(this.frmRegistro_Load);

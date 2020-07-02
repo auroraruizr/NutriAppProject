@@ -12,9 +12,12 @@ namespace NutriApp
 {
     public partial class frmMenu : Form
     {
+        ConnectToDataBase cnxON = new ConnectToDataBase();
         public frmMenu()
         {
             InitializeComponent();
+            cnxON.OpenConnection();
+            
         }
 
         private void asistenteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -95,6 +98,12 @@ namespace NutriApp
         private void salirDeNutriAppToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ajusteDeAgendaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultas.frmAjustesAgenda Wajustes = new frmConsultas.frmAjustesAgenda();
+            Wajustes.ShowDialog();
         }
     }
 }

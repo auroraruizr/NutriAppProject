@@ -37,7 +37,6 @@
             this.proximasCitasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cancelarCitasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.proximaCitaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajusteDeAgendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoPacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -130,24 +129,18 @@
             // consultasToolStripMenuItem
             // 
             this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.proximaCitaToolStripMenuItem,
             this.ajusteDeAgendaToolStripMenuItem});
             this.consultasToolStripMenuItem.Image = global::NutriApp.Properties.Resources.Historial;
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             this.consultasToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
             this.consultasToolStripMenuItem.Text = "Consultas";
             // 
-            // proximaCitaToolStripMenuItem
-            // 
-            this.proximaCitaToolStripMenuItem.Name = "proximaCitaToolStripMenuItem";
-            this.proximaCitaToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.proximaCitaToolStripMenuItem.Text = "Proxima Cita";
-            // 
             // ajusteDeAgendaToolStripMenuItem
             // 
             this.ajusteDeAgendaToolStripMenuItem.Name = "ajusteDeAgendaToolStripMenuItem";
-            this.ajusteDeAgendaToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.ajusteDeAgendaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ajusteDeAgendaToolStripMenuItem.Text = "Ajuste de Agenda";
+            this.ajusteDeAgendaToolStripMenuItem.Click += new System.EventHandler(this.ajusteDeAgendaToolStripMenuItem_Click);
             // 
             // pacientesToolStripMenuItem
             // 
@@ -270,7 +263,6 @@
         private System.Windows.Forms.ToolStripMenuItem agendarCitasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem proximasCitasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cancelarCitasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem proximaCitaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajusteDeAgendaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nuevoPacienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem actualizacionToolStripMenuItem;
